@@ -1,3 +1,4 @@
+
 void scale(int level){
     print("------------\n");
     int xyi = 10;
