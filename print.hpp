@@ -1,9 +1,12 @@
 #include <string>
 #include <iostream>
 void print(std::string str){
-    std::cout << str;
-}
-
-void print(std::string str, int x){
-    std::cout << str << std::endl;
+    
+    int len = strlen(str);
+    if(str[len] == "n" && str[len--] == "\\"){
+        std::cout << str << std::endl;
+    }
+    else{
+        std::cout << str;
+    }
 }

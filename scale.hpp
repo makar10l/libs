@@ -1,5 +1,5 @@
 void scale(int level){
-    print("------------", 1);
+    print("------------\n");
     int xyi = 10;
     level = level / 10;
     xyi -= level;
@@ -13,5 +13,5 @@ void scale(int level){
         xyi--;
     }
     print("|", 1);
-    print("------------", 1);
+    print("------------\n");
 }
