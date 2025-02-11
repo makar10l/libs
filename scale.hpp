@@ -12,6 +12,6 @@ void scale(int level){
         print(".");
         xyi--;
     }
-    print("|", 1);
+    print("|\n");
     print("------------\n");
 }
