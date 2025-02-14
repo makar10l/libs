@@ -3,7 +3,8 @@
         Sleep(secs);
     }
 #else
-    void sleep(int speed_microsecs){
-        usleep(speed_microsecs);
+    void sleep(int secs){
+        int microsecs = secs * 1000000;
+        usleep(microsecs);
     }
 #endif
