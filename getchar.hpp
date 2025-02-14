@@ -1,4 +1,4 @@
-#ifdef
+
 #include <termios.h>
 #include <unistd.h>
 
@@ -14,6 +14,8 @@ int getch()
     tcsetattr( STDIN_FILENO, TCSANOW, &oldattr );
     return ch;
 }
+#ifdef
+
+#include <windows.h>
 
 #endif
-#include <windows.h>
