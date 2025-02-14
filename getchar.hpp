@@ -1,7 +1,5 @@
-
 #include <termios.h>
-#include <unistd.h>
-
+#include <cstdio>
 int getch()
 {
     struct termios oldattr, newattr;
@@ -14,8 +12,3 @@ int getch()
     tcsetattr( STDIN_FILENO, TCSANOW, &oldattr );
     return ch;
 }
-#ifdef
-
-#include <windows.h>
-
-#endif

@@ -1,10 +1,8 @@
-#include <unistd.h>
-#ifdef
-#include <windows.h>
-#endif
+#include <cstdlib>
 void clear(){
-    system("clear");
-    #ifdef
-    system("cls");
-    #endif
+       #ifdef WIN32
+            system("cls");
+        #else
+            system("clear");
+        #endif   
 }
