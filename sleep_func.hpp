@@ -1,6 +1,6 @@
 #ifdef WIN32
     void sleep(float secs){
-        secs = static_cast<int> secs;
+        secs *= 1000;
         Sleep(secs);
     }
 #else
